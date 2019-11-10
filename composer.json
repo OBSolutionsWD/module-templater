@@ -1,0 +1,29 @@
+{
+    "name": "obsolutionswd/module-templater",
+    "homepage": "https://addons.prestashop.com/es/65_obs-solutions",
+    "description": "Helper class to be used when a module needs to use templates",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "OBSolutions WD S.L.",
+            "email": "info@obsolutions.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    },
+    "config": {
+        "platform": {
+            "php": "5.6.0"
+        },
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "autoload": {
+        "psr-4": {
+            "OBSolutions\\Module\\Templater\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# IDE
+.buildpath
+.project
+.settings
+.externalToolBuilders
+.idea
+
+# Package managers
+/vendor
+composer.lock
+
+# macOS
+.DS_Store
