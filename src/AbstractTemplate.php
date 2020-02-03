@@ -48,5 +48,14 @@ abstract class AbstractTemplate implements ResponseInterface
         return $this->context->smarty->fetch($templatePath);
     }
 
+    protected function l($translatableText) {
+        try {
+            $reflect = new \ReflectionClass($this);
+            return $this->module->l($translatableText, strtolower($reflect->getShortName()));
+        } catch (\ReflectionException $e) {
+            return $translatableText;
+        }
+    }
+
     abstract public function getHtml();
 }
