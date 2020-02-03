@@ -45,7 +45,7 @@ abstract class AbstractTemplate implements ResponseInterface
             return $this->module->fetch($templatePath);
         }
 
-        return $this->context->smarty->fetch();
+        return $this->context->smarty->fetch($templatePath);
     }
 
     abstract public function getHtml();
